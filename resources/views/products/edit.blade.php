@@ -20,7 +20,7 @@
                             @method('PUT')
 
                             <div class="form-group mb-3">
-                                <label class="font-weight-bold">IMAGE</label>
+                                <label class="font-weight-bold">Gambar</label>
                                 <input type="file" class="form-control @error('image') is-invalid @enderror" name="image">
                             
                                 <!-- error message untuk image -->
@@ -32,7 +32,7 @@
                             </div>
 
                             <div class="form-group mb-3">
-                                <label class="font-weight-bold">TITLE</label>
+                                <label class="font-weight-bold">Judul</label>
                                 <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title', $product->title) }}" placeholder="Masukkan Judul Product">
                             
                                 <!-- error message untuk title -->
@@ -44,7 +44,7 @@
                             </div>
 
                             <div class="form-group mb-3">
-                                <label class="font-weight-bold">DESCRIPTION</label>
+                                <label class="font-weight-bold">Deskripsi</label>
                                 <textarea class="form-control @error('description') is-invalid @enderror" name="description" rows="5" placeholder="Masukkan Description Product">{{ old('description', $product->description) }}</textarea>
                             
                                 <!-- error message untuk description -->
@@ -58,7 +58,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group mb-3">
-                                        <label class="font-weight-bold">PRICE</label>
+                                        <label class="font-weight-bold">Harga</label>
                                         <input type="number" class="form-control @error('price') is-invalid @enderror" name="price" value="{{ old('price', $product->price) }}" placeholder="Masukkan Harga Product">
                                     
                                         <!-- error message untuk price -->
@@ -71,7 +71,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group mb-3">
-                                        <label class="font-weight-bold">STOCK</label>
+                                        <label class="font-weight-bold">Stok</label>
                                         <input type="number" class="form-control @error('stock') is-invalid @enderror" name="stock" value="{{ old('stock', $product->stock) }}" placeholder="Masukkan Stock Product">
                                     
                                         <!-- error message untuk stock -->
@@ -84,8 +84,8 @@
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-md btn-primary me-3">UPDATE</button>
-                            <button type="reset" class="btn btn-md btn-warning">RESET</button>
+                            <button type="submit" class="btn btn-md btn-primary me-3">Ubah</button>
+                            <button type="reset" class="btn btn-md btn-warning">Resset Produk</button>
 
                         </form> 
                     </div>

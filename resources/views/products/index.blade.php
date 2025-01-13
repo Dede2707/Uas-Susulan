@@ -23,7 +23,7 @@
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th scope="col">Image</th>
+                                    <th scope="col">Gambar</th>
                                     <th scope="col">Judul</th>
                                     <th scope="col">Harga</th>
                                     <th scope="col">Stok</th>
